@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal & Kunci Jawaban PH Kelas 3 HAQI School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+      body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+      }
+      .page-break-before {
+        page-break-before: always !important;
+        break-before: page !important;
+      }
+      .page-break-after {
+        page-break-after: always !important;
+        break-after: page !important;
+      }
+      .card-box {
+        border: 1px solid #cbd5e1 !important;
+        box-shadow: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="p-4 md:p-8">
+
+  <!-- Floating Navigation Controls (Hidden when printing) -->
+  <div class="no-print max-w-5xl mx-auto mb-6 bg-white p-4 rounded-2xl shadow-md border border-slate-200">
+    <div class="flex flex-wrap items-center justify-between gap-4">
+      <div>
+        <h1 class="text-xl font-bold text-emerald-700">Latihan PH Kelas 3 HAQI School</h1>
+        <p class="text-xs text-slate-500">Pilih mata pelajaran untuk melihat soal atau cetak ke PDF</p>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        <button onclick="window.print()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm px-4 py-2 rounded-xl flex items-center gap-2 transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+          Cetak / Simpan PDF
+        </button>
+        <button onclick="toggleAnswerKeys()" id="toggleKeyBtn" class="bg-amber-500 hover:bg-amber-600 text-white font-semibold text-sm px-4 py-2 rounded-xl transition">
+          Sembunyikan Kunci Jawaban
+        </button>
+      </div>
+    </div>
+
+    <!-- Tab Filter -->
+    <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-slate-100">
+      <button onclick="filterSubject('all')" class="tab-btn active bg-emerald-100 text-emerald-800 font-medium text-xs px-3 py-1.5 rounded-lg hover:bg-emerald-200">Semua Mapel</button>
+      <button onclick="filterSubject('bindonesia')" class="tab-btn bg-slate-100 text-slate-600 font-medium text-xs px-3 py-1.5 rounded-lg hover:bg-slate-200">Bahasa Indonesia</button>
+      <button onclick="filterSubject('matematika')" class="tab-btn bg-slate-100 text-slate-600 font-medium text-xs px-3 py-1.5 rounded-lg hover:bg-slate-200">Matematika</button>
+      <button onclick="filterSubject('pancasila')" class="tab-btn bg-slate-100 text-slate-600 font-medium text-xs px-3 py-1.5 rounded-lg hover:bg-slate-200">Pendidikan Pancasila</button>
+      <button onclick="filterSubject('ipas')" class="tab-btn bg-slate-100 text-slate-600 font-medium text-xs px-3 py-1.5 rounded-lg hover:bg-slate-200">IPAS</button>
+      <button onclick="filterSubject('binggris')" class="tab-btn bg-slate-100 text-slate-600 font-medium text-xs px-3 py-1.5 rounded-lg hover:bg-slate-200">Bahasa Inggris</button>
+    </div>
+  </div>
+
+  <div class="max-w-5xl mx-auto space-y-12">
+
+    <!-- ======================================================= -->
+    <!-- MATA PELAJARAN 1: BAHASA INDONESIA                      -->
+    <!-- ======================================================= -->
+    <div class="subject-block bindonesia bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 card-box">
+      <!-- Kop Surat Header -->
+      <div class="border-b-2 border-emerald-600 pb-4 mb-6 text-center">
+        <h2 class="text-lg font-bold text-slate-800 tracking-wide">HAQI SCHOOL</h2>
+        <p class="text-xs text-slate-600">Hafidz Qur'an Indonesian School</p>
+        <p class="text-[10px] text-slate-500">Jl. Rawa Gede Raya No. 68, RT 05/RW 02 Kel. Jatimelati, Bekasi, Jawa Barat</p>
+        <div class="mt-3 py-1.5 bg-emerald-50 text-emerald-800 font-bold text-sm uppercase rounded">
+          PENILAIAN HARIAN (PH) - BAHASA INDONESIA BAB 1
+        </div>
+      </div>
+
+      <!-- Identitas Siswa -->
+      <div class="grid grid-cols-2 gap-4 text-xs mb-6 border p-3 rounded-lg bg-slate-50">
+        <div><strong>Nama Siswa:</strong> .....................................</div>
+        <div><strong>Hari / Tanggal:</strong> .....................................</div>
+        <div><strong>Kelas:</strong> 3 (Tiga)</div>
+        <div><strong>Nilai:</strong> .....................................</div>
+      </div>
+
+      <!-- SOAL BAHASA INDONESIA -->
+      <div class="space-y-6 text-sm">
+        
+        <!-- Teks Narasi untuk Soal 1-3 & 8 & 16 -->
+        <div class="p-4 bg-amber-50 rounded-xl border border-amber-200 text-xs leading-relaxed">
+          <p class="font-bold text-amber-900 mb-1">Bacalah teks narasi berikut untuk menjawab soal nomor 1, 2, 3, 8, dan 16!</p>
+          <p class="font-semibold text-center my-1 text-slate-800">Piknik yang Menyenangkan</p>
+          <p>Pada hari Minggu pagi yang cerah, Haqi bersama keluarga pergi berpiknik ke Taman Bunga Nusantara. Mereka berangkat dari rumah pukul 06.30 WIB menggunakan mobil. Sesampainya di sana, Ayah menggelar tikar di bawah pohon yang rindang, sedangkan Ibu menyiapkan bekal makanan lezat. Haqi dan adiknya sangat gembira bermain lempar tangkap bola di atas rumput hijau. Tiba-tiba adik terjatuh dan menangis karena lututnya tergores. Haqi dengan sigap membantu adiknya berdiri dan mengusap air matanya. Setelah makan bersama, mereka pulang ke rumah dengan hati yang gembira.</p>
+        </div>
+
+        <h3 class="font-bold text-emerald-800 border-b pb-1">BAGIAN A: PILIHAN GANDA (Nomor 1 - 15)</h3>
+
+        <div class="space-y-4">
+          <div>
+            <p><strong>1.</strong> (Indikator C2 - PG) Ide pokok dari teks narasi "Piknik yang Menyenangkan" di atas adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Pengalaman berpiknik keluarga ke Taman Bunga</label>
+              <label>b. Cara mengobati adik yang terjatuh</label>
+              <label>c. Menyiapkan bekal makanan lezat</label>
+              <label>d. Perjalanan naik mobil di pagi hari</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>2.</strong> (Indikator C1 - PG) Informasi tersurat mengenai tempat dan waktu berlibur dalam cerita di atas adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Taman Kota, Sabtu sore</label>
+              <label>b. Taman Bunga Nusantara, Minggu pagi</label>
+              <label>c. Pantai Carita, Minggu siang</label>
+              <label>d. Kebun Raya, Sabtu pagi</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>3.</strong> (Indikator C4 - PG) Alasan tindakan Haqi menghampiri adiknya yang menangis adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Karena Haqi ingin mengambil bola</label>
+              <label>b. Karena adik tidak mau makan bekal</label>
+              <label>c. Karena Haqi peduli dan ingin menolong adik yang jatuh</label>
+              <label>d. Karena Haqi disuruh oleh Ibu</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>4.</strong> (Indikator C1 - PG) Identifikasi kalimat dengan penggunaan huruf kapital yang <strong>benar</strong> di bawah ini adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. pada hari selasa haqi pergi ke bandung.</label>
+              <label>b. Pada hari Selasa Haqi pergi ke Bandung.</label>
+              <label>c. Pada hari selasa Haqi pergi ke bandung.</label>
+              <label>d. Pada Hari Selasa Haqi Pergi Ke Bandung.</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>5.</strong> (Indikator C2 - PG) Tanda baca yang tepat untuk mengakhiri kalimat seruan "Wah indah sekali pemandangan di sini" adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Tanda titik (.)</label>
+              <label>b. Tanda tanya (?)</label>
+              <label>c. Tanda seru (!)</label>
+              <label>d. Tanda koma (,)</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>6.</strong> (Indikator C2 - PG) "Di mana tempat tinggalmu" Tanda baca yang tepat di akhir kalimat tersebut adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Tanda tanya (?)</label>
+              <label>b. Tanda seru (!)</label>
+              <label>c. Tanda titik (.)</label>
+              <label>d. Tanda koma (,)</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>7.</strong> (Indikator C2 - PG) Penggunaan tanda koma (,) yang tepat terdapat pada kalimat ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Ibu membeli bayam, wortel dan, kentang.</label>
+              <label>b. Ibu membeli bayam, wortel, dan kentang.</label>
+              <label>c. Ibu, membeli bayam wortel dan kentang.</label>
+              <label>d. Ibu membeli, bayam wortel, dan kentang.</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>8.</strong> (Indikator C2 - PG) Urutan peristiwa yang tepat berdasarkan cerita "Piknik yang Menyenangkan" adalah ....</p>
+            <p class="ml-4 text-xs text-slate-600">(1) Makan bersama (2) Berangkat pukul 06.30 (3) Adik jatuh dan ditolong (4) Menggelar tikar</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. (2) - (4) - (3) - (1)</label>
+              <label>b. (1) - (2) - (3) - (4)</label>
+              <label>c. (4) - (3) - (2) - (1)</label>
+              <label>d. (2) - (1) - (4) - (3)</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>9.</strong> (Indikator C1 - PG) Pengertian dari puisi anak secara sederhana adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Teks cerita yang panjang dan rumit</label>
+              <label>b. Karya sastra berisi ungkapan perasaan dengan kata indah dan terikat bait serta baris</label>
+              <label>c. Tulisan berita tentang kejadian di jalan raya</label>
+              <label>d. Percakapan antara dua orang atau lebih</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>10.</strong> (Indikator C2 - PG) Ciri utama karya sastra berbentuk puisi adalah tersusun atas kumpulan ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Paragraf dan kalimat panjang</label>
+              <label>b. Baris (larik) yang terikat dalam bait</label>
+              <label>c. Bab dan subbab</label>
+              <label>d. Pertanyaan dan jawaban</label>
+            </div>
+          </div>
+
+          <!-- Puisi Chairil Anwar untuk Soal 11-13, 17, 21, 24 -->
+          <div class="p-3 bg-slate-100 rounded-lg text-xs border border-slate-300">
+            <p class="font-bold text-slate-700">Bacalah Puisi Karya Chairil Anwar berikut untuk soal no. 11, 12, 13, 17, 21, dan 24!</p>
+            <p class="italic font-serif my-1 text-center">"AKU"<br>Kalau sampai waktuku<br>'Ku mau tak seorang 'kan merayu<br>Tidak juga kau<br>Tak perlu sedu kayan itu!<br><br>Aku ini binatang jalang<br>Dari kumpulannya terbuang<br>Biarpun peluru menembus kulitku<br>Aku tetap meradang menerjang</p>
+          </div>
+
+          <div>
+            <p><strong>11.</strong> (Indikator C1 - PG) Persajakan (rima) pada baris 1 dan 2 bait kedua puisi "Aku" (*jalang - terbuang*) adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Rima a-a-a-a</label>
+              <label>b. Rima a-b-a-b</label>
+              <label>c. Rima sama (-ang)</label>
+              <label>d. Rima bebas</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>12.</strong> (Indikator C2 - PG) Tema utama yang terkandung dalam puisi "Aku" karya Chairil Anwar adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Keindahan alam di desa</label>
+              <label>b. Semangat kegigihan dan kesetiaan pada pendirian</label>
+              <label>c. Kesedihan seorang anak</label>
+              <label>d. Liburan yang menyenangkan</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>13.</strong> (Indikator C4 - PG) Suasana dan perasaan yang tergambar dalam larik *"Aku tetap meradang menerjang"* adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Lemah dan sedih</label>
+              <label>b. Penuh semangat dan pantang menyerah</label>
+              <label>c. Takut dan cemas</label>
+              <label>d. Santai dan gembira</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>14.</strong> (Indikator C1 - PG) Penulisan huruf kapital yang tepat untuk nama orang dan nama kota adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. ahmad tinggal di bekasi.</label>
+              <label>b. Ahmad tinggal di Bekasi.</label>
+              <label>c. Ahmad tinggal di bekasi.</label>
+              <label>d. ahmad tinggal di Bekasi.</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>15.</strong> (Indikator C2 - PG) Perhatikan dialog berikut: *Ibu berkata ( ) "Ayo makan bekalmu ( ) Haqi"*<br>Tanda baca yang tepat dalam tanda kurung berturut-turut adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. koma (,) dan koma (,)</label>
+              <label>b. titik dua (:) dan tanda tanya (?)</label>
+              <label>c. koma (,) dan koma (,)</label>
+              <label>d. koma (,) dan tanda seru (!)</label>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="font-bold text-emerald-800 border-b pb-1 pt-4">BAGIAN B: ISIAN SINGKAT (Nomor 16 - 20)</h3>
+        <div class="space-y-3">
+          <p><strong>16.</strong> (Indikator C1 - Isian) Berdasarkan cerita "Piknik yang Menyenangkan", anak yang terjatuh dan diusap air matanya oleh Haqi adalah ........................</p>
+          <p><strong>17.</strong> (Indikator C2 - Isian) Pengarang puisi legendaris "Aku" adalah ........................</p>
+          <p><strong>18.</strong> (Indikator C2 - Isian) Tanda baca yang digunakan untuk memisahkan unsur-unsur dalam suatu rincian atau pembilangan adalah tanda ........................</p>
+          <p><strong>19.</strong> (Indikator C2 - Isian) Satu kelompok baris dalam puisi disebut ........................</p>
+          <p><strong>20.</strong> (Indikator C4 - Isian) Perasaan yang dialami keluarga Haqi saat pulang dari piknik adalah ........................</p>
+        </div>
+
+        <h3 class="font-bold text-emerald-800 border-b pb-1 pt-4">BAGIAN C: ESAI / URAIAN (Nomor 21 - 25)</h3>
+        <div class="space-y-4">
+          <p><strong>21.</strong> (Indikator C5 - Esai) Berikan tanggapanmu terhadap sikap pantang menyerah yang ditunjukkan dalam puisi karya Chairil Anwar!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+
+          <p><strong>22.</strong> (Indikator C6 - Esai) Perbaikilah kalimat rumpang berikut dengan menerapkan aturan huruf kapital dan tanda baca yang benar: <br><em class="text-slate-600">"pada hari libur aisyah dan umar berenang di kolam renang tirta indah"</em></p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+
+          <p><strong>23.</strong> (Indikator C4 - Esai) Jelaskan 2 perbedaan antara teks narasi dengan teks puisi!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+
+          <p><strong>24.</strong> (Indikator C2 - Esai) Jelaskan dengan bahasamu sendiri makna bait *"Aku mau hidup seribu tahun lagi"* dalam puisi!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+
+          <p><strong>25.</strong> (Indikator C6 - Esai) Buatlah 1 bait puisi sederhana (4 baris) bertema kegiatan yang menyenangkan!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+        </div>
+      </div>
+
+      <!-- KUNCI JAWABAN BAHASA INDONESIA -->
+      <div class="answer-key page-break-before mt-8 pt-6 border-t-2 border-dashed border-red-400 bg-red-50 p-6 rounded-xl">
+        <h3 class="text-base font-bold text-red-700 uppercase mb-3 text-center">KUNCI JAWABAN & PEMBAHASAN: BAHASA INDONESIA BAB 1</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          <div>
+            <h4 class="font-bold text-slate-800 border-b pb-1 mb-2">Pilihan Ganda</h4>
+            <ol class="list-decimal list-inside space-y-1 text-slate-700">
+              <li><strong>A</strong> (Pengalaman berpiknik keluarga ke Taman Bunga)</li>
+              <li><strong>B</strong> (Taman Bunga Nusantara, Minggu pagi)</li>
+              <li><strong>C</strong> (Karena Haqi peduli dan ingin menolong adik)</li>
+              <li><strong>B</strong> (Pada hari Selasa Haqi pergi ke Bandung.)</li>
+              <li><strong>C</strong> (Tanda seru !)</li>
+              <li><strong>A</strong> (Tanda tanya ?)</li>
+              <li><strong>B</strong> (Ibu membeli bayam, wortel, dan kentang.)</li>
+              <li><strong>A</strong> ((2) - (4) - (3) - (1))</li>
+              <li><strong>B</strong> (Ungkapan perasaan berkataindah & terikat bait)</li>
+              <li><strong>B</strong> (Baris/larik terikat dalam bait)</li>
+              <li><strong>C</strong> (Rima sama akhiran -ang)</li>
+              <li><strong>B</strong> (Semangat kegigihan dan pantang menyerah)</li>
+              <li><strong>B</strong> (Penuh semangat dan pantang menyerah)</li>
+              <li><strong>B</strong> (Ahmad tinggal di Bekasi.)</li>
+              <li><strong>D</strong> (Koma (,) dan tanda seru (!))</li>
+            </ol>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-800 border-b pb-1 mb-2">Isian Singkat & Esai</h4>
+            <p><strong>16.</strong> Adik Haqi</p>
+            <p><strong>17.</strong> Chairil Anwar</p>
+            <p><strong>18.</strong> Koma (,)</p>
+            <p><strong>19.</strong> Bait</p>
+            <p><strong>20.</strong> Gembira / Senang</p>
+            <div class="mt-2 space-y-2">
+              <p><strong>21.</strong> Sikap pantang menyerah sangat baik dipelajari agar kita tidak mudah putus asa saat menghadapi kesulitan.</p>
+              <p><strong>22.</strong> <em>"Pada hari libur, Aisyah dan Umar berenang di kolam renang Tirta Indah."</em></p>
+              <p><strong>23.</strong> Teks narasi berbentuk paragraf dan cerita panjang, sedangkan puisi ditulis dalam bait/baris dengan kata-kata indah ber-rima.</p>
+              <p><strong>24.</strong> Penulis ingin karya atau semangat hidupnya bermanfaat dan diingat terus sepanjang masa.</p>
+              <p><strong>25.</strong> Contoh bait puisi: <br><em>Indahnya pagi di taman kota,<br>Berlari-lari bersama teman.<br>Hati gembira penuh tawa,<br>Menikmati hari yang menyenangkan.</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ======================================================= -->
+    <!-- MATA PELAJARAN 2: MATEMATIKA                            -->
+    <!-- ======================================================= -->
+    <div class="subject-block matematika bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 card-box page-break-before">
+      <!-- Kop Surat Header -->
+      <div class="border-b-2 border-blue-600 pb-4 mb-6 text-center">
+        <h2 class="text-lg font-bold text-slate-800 tracking-wide">HAQI SCHOOL</h2>
+        <p class="text-xs text-slate-600">Hafidz Qur'an Indonesian School</p>
+        <div class="mt-3 py-1.5 bg-blue-50 text-blue-800 font-bold text-sm uppercase rounded">
+          PENILAIAN HARIAN (PH) - MATEMATIKA BAB 1: BILANGAN CACAH SAMPAI 1.000
+        </div>
+      </div>
+
+      <!-- Identitas Siswa -->
+      <div class="grid grid-cols-2 gap-4 text-xs mb-6 border p-3 rounded-lg bg-slate-50">
+        <div><strong>Nama Siswa:</strong> .....................................</div>
+        <div><strong>Hari / Tanggal:</strong> .....................................</div>
+        <div><strong>Kelas:</strong> 3 (Tiga)</div>
+        <div><strong>Nilai:</strong> .....................................</div>
+      </div>
+
+      <!-- SOAL MATEMATIKA -->
+      <div class="space-y-6 text-sm">
+        <h3 class="font-bold text-blue-800 border-b pb-1">BAGIAN A: PILIHAN GANDA (Nomor 1 - 15)</h3>
+        <div class="space-y-4">
+          <div>
+            <p><strong>1.</strong> (Indikator C1 - PG) Lambang bilangan **745** dibaca ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Tujuh ratus empat puluh lima</label>
+              <label>b. Tujuh ratus lima puluh empat</label>
+              <label>c. Tujuh puluh empat lima</label>
+              <label>d. Tujuh ratus empat lima</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>2.</strong> (Indikator C1 - PG) Nama bilangan dari **608** adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Enam ratus delapan puluh</label>
+              <label>b. Enam ratus delapan</label>
+              <label>c. Enam puluh delapan</label>
+              <label>d. Enam ribu delapan</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>3.</strong> (Indikator C1 - PG) Pada bilangan **839**, angka **8** menduduki nilai tempat ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Satuan</label>
+              <label>b. Puluhan</label>
+              <label>c. Ratusan</label>
+              <label>d. Ribuan</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>4.</strong> (Indikator C2 - PG) Nilai dari angka **5** pada bilangan **452** adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. 5</label>
+              <label>b. 50</label>
+              <label>c. 500</label>
+              <label>d. 5.000</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>5.</strong> (Indikator C2 - PG) Bilangan yang terdiri atas 9 ratusan, 0 puluhan, dan 4 satuan adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. 940</label>
+              <label>b. 904</label>
+              <label>c. 409</label>
+              <label>d. 944</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>6.</strong> (Indikator C1 - PG) Tanda perbandingan yang tepat untuk **452 ... 425** adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. &lt;</label>
+              <label>b. &gt;</label>
+              <label>c. =</label>
+              <label>d. +</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>7.</strong> (Indikator C2 - PG) Perbandingan bilangan berikut yang <strong>benar</strong> adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. 612 &gt; 621</label>
+              <label>b. 589 &lt; 579</label>
+              <label>c. 340 &lt; 345</label>
+              <label>d. 701 = 710</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>8.</strong> (Indikator C2 - PG) Di antara bilangan 819, 891, 811, dan 890, bilangan yang paling kecil adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. 819</label>
+              <label>b. 891</label>
+              <label>c. 811</label>
+              <label>d. 890</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>9.</strong> (Indikator C1 - PG) Urutan bilangan **235, 189, 412, 305** dari yang terkecil ke terbesar adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. 189, 235, 305, 412</label>
+              <label>b. 412, 305, 235, 189</label>
+              <label>c. 189, 305, 235, 412</label>
+              <label>d. 235, 189, 305, 412</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>10.</strong> (Indikator C2 - PG) Di antara pasangan bilangan berikut, manakah yang nilainya lebih besar dari 650?</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. 649</label>
+              <label>b. 599</label>
+              <label>c. 658</label>
+              <label>d. 605</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>11.</strong> (Indikator C3 - PG) Bilangan "Delapan ratus sembilan belas" jika ditulis dalam bentuk angka adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. 890</label>
+              <label>b. 819</label>
+              <label>c. 891</label>
+              <label>d. 809</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>12.</strong> (Indikator C3 - PG) 5 ratusan + 7 puluhan + 3 satuan = ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. 573</label>
+              <label>b. 537</label>
+              <label>c. 753</label>
+              <label>d. 375</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>13.</strong> (Indikator C3 - PG) Toko A memiliki 375 botol dan Toko B memiliki 357 botol. Pernyataan yang benar adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Botol Toko A lebih sedikit dari Toko B</label>
+              <label>b. Botol Toko A lebih banyak dari Toko B</label>
+              <label>c. Botol Toko A sama dengan Toko B</label>
+              <label>d. Toko B memiliki botol terbanyak</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>14.</strong> (Indikator C4 - PG) Urutan kelereng Budi (420), Ali (402), dan Cici (422) dari yang terbanyak adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Ali, Budi, Cici</label>
+              <label>b. Cici, Budi, Ali</label>
+              <label>c. Cici, Ali, Budi</label>
+              <label>d. Budi, Cici, Ali</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>15.</strong> (Indikator C4 - PG) Mita membaca 345 halaman, sedangkan Dini membaca 354 halaman. Siapakah yang membaca lebih banyak halaman?</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Mita</label>
+              <label>b. Dini</label>
+              <label>c. Sama banyak</label>
+              <label>d. Tidak bisa dihitung</label>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="font-bold text-blue-800 border-b pb-1 pt-4">BAGIAN B: ISIAN SINGKAT (Nomor 16 - 20)</h3>
+        <div class="space-y-3">
+          <p><strong>16.</strong> (Indikator C2 - Isian) Bilangan 942 dibaca ............................................................................</p>
+          <p><strong>17.</strong> (Indikator C2 - Isian) Angka 6 pada bilangan 763 mempunyai nilai angka sebesar ........................</p>
+          <p><strong>18.</strong> (Indikator C3 - Isian) Masukan tanda (&lt; atau &gt;): 689 ....... 698</p>
+          <p><strong>19.</strong> (Indikator C3 - Isian) Urutkan dari yang terbesar ke terkecil: **512, 740, 625, 499** $\rightarrow$ ........................................................</p>
+          <p><strong>20.</strong> (Indikator C3 - Isian) 8 ratusan + 3 puluhan + 0 satuan = ........................</p>
+        </div>
+
+        <h3 class="font-bold text-blue-800 border-b pb-1 pt-4">BAGIAN C: ESAI / URAIAN (Nomor 21 - 25)</h3>
+        <div class="space-y-4">
+          <p><strong>21.</strong> (Indikator C4 - Esai) Diberikan 3 kartu angka: **[ 6 ] , [ 2 ] , [ 9 ]**.<br>a. Susunlah bilangan 3 angka **terbesar**!<br>b. Susunlah bilangan 3 angka **terkecil**!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+
+          <p><strong>22.</strong> (Indikator C5 - Esai) Rumah Ahmad bernomor 475, sedangkan rumah Fatimah bernomor 457. Jelaskan rumah siapa yang nomornya lebih besar berdasarkan analisis nilai tempat ratusan, puluhan, dan satuannya!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+
+          <p><strong>23.</strong> (Indikator C3 - Esai) Tuliskan bilangan **"Tujuh Ratus Enam Puluh Empat"** dalam bentuk angka, lalu uraikan nilai tempatnya masing-masing (ratusan, puluhan, satuan)!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+
+          <p><strong>24.</strong> (Indikator C6 - Esai) Buatlah 4 buah bilangan 3 angka acak antara 500 sampai 600, kemudian urutkan bilangan buatanmu itu dari yang terkecil ke terbesar!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+
+          <p><strong>25.</strong> (Indikator C5 - Esai) Data hasil panen mangga 3 kebun: Kebun A (485 kg), Kebun B (510 kg), Kebun C (492 kg). Urutkan kebun dari hasil panen terbanyak dan berikan kesimpulan kebun mana yang paling produktif!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+        </div>
+      </div>
+
+      <!-- KUNCI JAWABAN MATEMATIKA -->
+      <div class="answer-key page-break-before mt-8 pt-6 border-t-2 border-dashed border-red-400 bg-red-50 p-6 rounded-xl">
+        <h3 class="text-base font-bold text-red-700 uppercase mb-3 text-center">KUNCI JAWABAN & PEMBAHASAN: MATEMATIKA BAB 1</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          <div>
+            <h4 class="font-bold text-slate-800 border-b pb-1 mb-2">Pilihan Ganda</h4>
+            <ol class="list-decimal list-inside space-y-1 text-slate-700">
+              <li><strong>A</strong> (Tujuh ratus empat puluh lima)</li>
+              <li><strong>B</strong> (Enam ratus delapan)</li>
+              <li><strong>C</strong> (Ratusan)</li>
+              <li><strong>B</strong> (50)</li>
+              <li><strong>B</strong> (904)</li>
+              <li><strong>B</strong> (&gt; karena 452 lebih besar dari 425)</li>
+              <li><strong>C</strong> (340 &lt; 345)</li>
+              <li><strong>C</strong> (811)</li>
+              <li><strong>A</strong> (189, 235, 305, 412)</li>
+              <li><strong>C</strong> (658)</li>
+              <li><strong>B</strong> (819)</li>
+              <li><strong>A</strong> (573)</li>
+              <li><strong>B</strong> (Botol Toko A (375) &gt; Toko B (357))</li>
+              <li><strong>B</strong> (Cici (422), Budi (420), Ali (402))</li>
+              <li><strong>B</strong> (Dini (354 halaman))</li>
+            </ol>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-800 border-b pb-1 mb-2">Isian Singkat & Esai</h4>
+            <p><strong>16.</strong> Sembilan ratus empat puluh dua</p>
+            <p><strong>17.</strong> 60</p>
+            <p><strong>18.</strong> &lt; (kurang dari)</p>
+            <p><strong>19.</strong> 740, 625, 512, 499</p>
+            <p><strong>20.</strong> 830</p>
+            <div class="mt-2 space-y-2">
+              <p><strong>21.</strong> a. Terbesar: <strong>962</strong> <br>b. Terkecil: <strong>269</strong></p>
+              <p><strong>22.</strong> Rumah Ahmad (475) lebih besar dari Fatimah (457) karena meskipun ratusannya sama (400), puluhannya 70 &gt; 50.</p>
+              <p><strong>23.</strong> Angka: <strong>764</strong>. (7 ratusan = 700, 6 puluhan = 60, 4 satuan = 4).</p>
+              <p><strong>24.</strong> Contoh: 510, 535, 570, 595 (Urutan sesuai pembuatan siswa).</p>
+              <p><strong>25.</strong> Urutan: Kebun B (510 kg), Kebun C (492 kg), Kebun A (485 kg). Kesimpulan: Kebun B paling produktif.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ======================================================= -->
+    <!-- MATA PELAJARAN 3: PENDIDIKAN PANCASILA                  -->
+    <!-- ======================================================= -->
+    <div class="subject-block pancasila bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 card-box page-break-before">
+      <!-- Kop Surat Header -->
+      <div class="border-b-2 border-red-600 pb-4 mb-6 text-center">
+        <h2 class="text-lg font-bold text-slate-800 tracking-wide">HAQI SCHOOL</h2>
+        <p class="text-xs text-slate-600">Hafidz Qur'an Indonesian School</p>
+        <div class="mt-3 py-1.5 bg-red-50 text-red-800 font-bold text-sm uppercase rounded">
+          PENILAIAN HARIAN (PH) - PENDIDIKAN PANCASILA BAB 1: AKU ANAK INDONESIA
+        </div>
+      </div>
+
+      <!-- Identitas Siswa -->
+      <div class="grid grid-cols-2 gap-4 text-xs mb-6 border p-3 rounded-lg bg-slate-50">
+        <div><strong>Nama Siswa:</strong> .....................................</div>
+        <div><strong>Hari / Tanggal:</strong> .....................................</div>
+        <div><strong>Kelas:</strong> 3 (Tiga)</div>
+        <div><strong>Nilai:</strong> .....................................</div>
+      </div>
+
+      <!-- SOAL PENDIDIKAN PANCASILA -->
+      <div class="space-y-6 text-sm">
+        <h3 class="font-bold text-red-800 border-b pb-1">BAGIAN A: PILIHAN GANDA (Nomor 1 - 15)</h3>
+        <div class="space-y-4">
+          <div>
+            <p><strong>1.</strong> (Indikator C1 - PG) Elemen identitas diri paling mendasar yang tercantum dalam Kartu Identitas Anak adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Nama lengkap dan jenis kelamin</label>
+              <label>b. Mainan kesukaan dan makanan favorit</label>
+              <label>c. Nilai ujian sekolah</label>
+              <label>d. Nama warna kesukaan</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>2.</strong> (Indikator C1 - PG) Haqi berjenis kelamin laki-laki, sedangkan Aisyah berjenis kelamin ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Laki-laki</label>
+              <label>b. Perempuan</label>
+              <label>c. Dewasa</label>
+              <label>d. Anak-anak</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>3.</strong> (Indikator C2 - PG) Budi berrambut keriting dan kulit sawo matang, sedangkan Edo berrambut lurus. Walaupun berbeda ciri fisik, sikap yang benar adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Saling mengejek ciri fisik</label>
+              <label>b. Saling menghargai dan berteman baik</label>
+              <label>c. Hanya mau berteman yang rambutnya sama</label>
+              <label>d. Menjauhi teman yang beda ciri fisik</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>4.</strong> (Indikator C1 - PG) Tempat beribadah umat Islam adalah Masjid, sedangkan tempat ibadah umat Kristen adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Pura</label>
+              <label>b. Vihara</label>
+              <label>c. Gereja</label>
+              <label>d. Kelenteng</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>5.</strong> (Indikator C1 - PG) Di Indonesia terdapat 6 agama resmi. Sikap terhadap keberagaman agama di lingkungan sekitar adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Mengganggu teman saat beribadah</label>
+              <label>b. Hormat menghormati antarumat beragama</label>
+              <label>c. Memaksa teman mengikuti agama kita</label>
+              <label>d. Acuh tak acuh</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>6.</strong> (Indikator C2 - PG) Suku Jawa berasal dari Pulau Jawa, sedangkan Suku Minangkabau berasal dari Provinsi ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Papua</label>
+              <label>b. Sumatra Barat</label>
+              <label>c. Sulawesi Selatan</label>
+              <label>d. Bali</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>7.</strong> (Indikator C2 - PG) Bahasa daerah yang umum digunakan oleh masyarakat di Jawa Barat adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Bahasa Sunda</label>
+              <label>b. Bahasa Batak</label>
+              <label>c. Bahasa Jawa</label>
+              <label>d. Bahasa Bugis</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>8.</strong> (Indikator C4 - PG) Dalam cerita narasi, Made yang beragama Hindu dan Wayan yang Suku Bali tetap bekerja sama memotong rumput bersama Udin yang Suku Jawa. Hal ini mencerminkan sikap ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Persatuan dan toleransi</label>
+              <label>b. Percocokan</label>
+              <label>c. Permusuhan</label>
+              <label>d. Kebanggaan diri</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>9.</strong> (Indikator C3 - PG) Urutan tingkatan wilayah dari yang paling kecil hingga terbesar adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. RT $\rightarrow$ RW $\rightarrow$ Kelurahan $\rightarrow$ Kecamatan $\rightarrow$ Kabupaten/Kota $\rightarrow$ Provinsi</label>
+              <label>b. RW $\rightarrow$ RT $\rightarrow$ Kecamatan $\rightarrow$ Kelurahan $\rightarrow$ Provinsi</label>
+              <label>c. Kelurahan $\rightarrow$ RT $\rightarrow$ RW $\rightarrow$ Kecamatan $\rightarrow$ Provinsi</label>
+              <label>d. RT $\rightarrow$ Kelurahan $\rightarrow$ RW $\rightarrow$ Kecamatan $\rightarrow$ Provinsi</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>10.</strong> (Indikator C1 - PG) Pemimpin administratif di tingkat Kelurahan disebut ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Camat</label>
+              <label>b. Lurah</label>
+              <label>c. Bupati</label>
+              <label>d. Gubernur</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>11.</strong> (Indikator C2 - PG) Tugas utama seorang Kepala Desa atau Lurah adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Melayani dan mengayomi kebutuhan warga masyarakat setempat</label>
+              <label>b. Mengajar murid-murid di sekolah</label>
+              <label>c. Mengobati orang sakit di rumah sakit</label>
+              <label>d. Memperbaiki kendaraan mogok</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>12.</strong> (Indikator C1 - PG) Tingkatan wilayah di bawah Kecamatan yang dipimpin oleh seorang Camat adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Provinsi</label>
+              <label>b. Kelurahan / Desa</label>
+              <label>c. Negara</label>
+              <label>d. Kabupaten</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>13.</strong> (Indikator C3 - PG) *"Aisyah tinggal di RT 05, RW 02, Kelurahan Jatimelati, Kecamatan Pondok Melati."* Urutan wilayah dari yang terkecil sesuai narasi adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. RT 05 $\rightarrow$ RW 02 $\rightarrow$ Kel. Jatimelati $\rightarrow$ Kec. Pondok Melati</label>
+              <label>b. Kec. Pondok Melati $\rightarrow$ Kel. Jatimelati $\rightarrow$ RW 02</label>
+              <label>c. Kel. Jatimelati $\rightarrow$ RT 05 $\rightarrow$ RW 02</label>
+              <label>d. RW 02 $\rightarrow$ RT 05 $\rightarrow$ Kec. Pondok Melati</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>14.</strong> (Indikator C2 - PG) Ciri khas lingkungan kehidupan di wilayah **pedesaan** adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Banyak gedung pencakar langit dan kemacetan</label>
+              <label>b. Udara sejuk, banyak sawah, dan hubungan antarwarga sangat akrab</label>
+              <label>c. Pusat perbelanjaan dan mal di mana-mana</label>
+              <label>d. Banyak pabrik industri besar</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>15.</strong> (Indikator C2 - PG) Mata pencaharian sebagian besar penduduk yang tinggal di daerah perkotaan adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Petani padi</label>
+              <label>b. Karyawan kantor dan jasa</label>
+              <label>c. Nelayan tradisional</label>
+              <label>d. Penderah karet</label>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="font-bold text-red-800 border-b pb-1 pt-4">BAGIAN B: ISIAN SINGKAT (Nomor 16 - 20)</h3>
+        <div class="space-y-3">
+          <p><strong>16.</strong> (Indikator C2 - Isian) Suku Asmat berasal dari Pulau ........................</p>
+          <p><strong>17.</strong> (Indikator C2 - Isian) Semboyan bangsa Indonesia yang berbunyi "Bhinneka Tunggal Ika" artinya ........................................................</p>
+          <p><strong>18.</strong> (Indikator C3 - Isian) Beberapa kelompok RT yang berkumpul membentuk organisasi wilayah yang disebut ........................ (RW)</p>
+          <p><strong>19.</strong> (Indikator C4 - Isian) Penduduk desa umumnya bekerja sebagai petani, sedangkan penduduk kota mayoritas bekerja di bidang ........................</p>
+          <p><strong>20.</strong> (Indikator C1 - Isian) Wilayah tingkat Provinsi dipimpin oleh seorang ........................</p>
+        </div>
+
+        <h3 class="font-bold text-red-800 border-b pb-1 pt-4">BAGIAN C: ESAI / URAIAN (Nomor 21 - 25)</h3>
+        <div class="space-y-4">
+          <p><strong>21.</strong> (Indikator C2 - Esai) Tuliskan identitas dirimu secara singkat (Nama lengkap, jenis kelamin, dan asal daerah/suku keluargamu)!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+
+          <p><strong>22.</strong> (Indikator C1 - Esai) Tuliskan alamat rumah tempat tinggalmu secara urut mulai dari RT, RW, Kelurahan/Desa, Kecamatan, hingga Kota/Kabupaten!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+
+          <p><strong>23.</strong> (Indikator C4 - Esai) Berdasarkan narasi perjalanan dari desa ke kota, jelaskan 2 perbedaan suasana dan aktivitas penduduk antara kehidupan di desa dan kota!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+
+          <p><strong>24.</strong> (Indikator C5 - Esai) Mengapa kita harus saling menghargai dan tidak boleh meremehkan perbedaan kehidupan antara masyarakat desa dan kota? Berikan alasanmu!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+
+          <p><strong>25.</strong> (Indikator C6 - Esai) Rancanglah 3 contoh tindakan nyata yang dapat kamu lakukan sebagai anak Indonesia untuk menjaga persatuan dan kesatuan di lingkungan sekolah!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+        </div>
+      </div>
+
+      <!-- KUNCI JAWABAN PENDIDIKAN PANCASILA -->
+      <div class="answer-key page-break-before mt-8 pt-6 border-t-2 border-dashed border-red-400 bg-red-50 p-6 rounded-xl">
+        <h3 class="text-base font-bold text-red-700 uppercase mb-3 text-center">KUNCI JAWABAN & PEMBAHASAN: PENDIDIKAN PANCASILA BAB 1</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          <div>
+            <h4 class="font-bold text-slate-800 border-b pb-1 mb-2">Pilihan Ganda</h4>
+            <ol class="list-decimal list-inside space-y-1 text-slate-700">
+              <li><strong>A</strong> (Nama lengkap dan jenis kelamin)</li>
+              <li><strong>B</strong> (Perempuan)</li>
+              <li><strong>B</strong> (Saling menghargai dan berteman baik)</li>
+              <li><strong>C</strong> (Gereja)</li>
+              <li><strong>B</strong> (Hormat menghormati antarumat beragama)</li>
+              <li><strong>B</strong> (Sumatra Barat)</li>
+              <li><strong>A</strong> (Bahasa Sunda)</li>
+              <li><strong>A</strong> (Persatuan dan toleransi)</li>
+              <li><strong>A</strong> (RT $\rightarrow$ RW $\rightarrow$ Kelurahan $\rightarrow$ Kecamatan $\rightarrow$ Kab/Kota $\rightarrow$ Provinsi)</li>
+              <li><strong>B</strong> (Lurah)</li>
+              <li><strong>A</strong> (Melayani dan mengayomi kebutuhan warga)</li>
+              <li><strong>B</strong> (Kelurahan / Desa)</li>
+              <li><strong>A</strong> (RT 05 $\rightarrow$ RW 02 $\rightarrow$ Kel. Jatimelati $\rightarrow$ Kec. Pondok Melati)</li>
+              <li><strong>B</strong> (Udara sejuk, sawah, ramah)</li>
+              <li><strong>B</strong> (Karyawan kantor dan jasa)</li>
+            </ol>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-800 border-b pb-1 mb-2">Isian Singkat & Esai</h4>
+            <p><strong>16.</strong> Papua</p>
+            <p><strong>17.</strong> Berbeda-beda tetapi tetap satu jua</p>
+            <p><strong>18.</strong> Rukun Warga (RW)</p>
+            <p><strong>19.</strong> Jasa / Perkantoran / Industri</p>
+            <p><strong>20.</strong> Gubernur</p>
+            <div class="mt-2 space-y-2">
+              <p><strong>21.</strong> Jawaban disesuaikan dengan data diri siswa.</p>
+              <p><strong>22.</strong> Contoh: RT 05 / RW 02, Kelurahan Jatimelati, Kecamatan Pondok Melati, Kota Bekasi.</p>
+              <p><strong>23.</strong> Desa: Udara asri sejuk, mayoritas bertani. Kota: Ramai/macet, gedung tinggi, kerja di kantor/jasa.</p>
+              <p><strong>24.</strong> Karena desa dan kota saling membutuhkan; kota mendapat pasokan pangan dari desa, desa mendapatkan pasokan barang teknologi dari kota.</p>
+              <p><strong>25.</strong> (1) Berteman tanpa membedakan suku/agama, (2) Menolong teman yang kesulitan, (3) Mencegah pertengkaran.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ======================================================= -->
+    <!-- MATA PELAJARAN 4: IPAS                                  -->
+    <!-- ======================================================= -->
+    <div class="subject-block ipas bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 card-box page-break-before">
+      <!-- Kop Surat Header -->
+      <div class="border-b-2 border-purple-600 pb-4 mb-6 text-center">
+        <h2 class="text-lg font-bold text-slate-800 tracking-wide">HAQI SCHOOL</h2>
+        <p class="text-xs text-slate-600">Hafidz Qur'an Indonesian School</p>
+        <div class="mt-3 py-1.5 bg-purple-50 text-purple-800 font-bold text-sm uppercase rounded">
+          PENILAIAN HARIAN (PH) - IPAS BAB 1: PANCAINDERAKU & FUNGSI BODY PARTS
+        </div>
+      </div>
+
+      <!-- Identitas Siswa -->
+      <div class="grid grid-cols-2 gap-4 text-xs mb-6 border p-3 rounded-lg bg-slate-50">
+        <div><strong>Nama Siswa:</strong> .....................................</div>
+        <div><strong>Hari / Tanggal:</strong> .....................................</div>
+        <div><strong>Kelas:</strong> 3 (Tiga)</div>
+        <div><strong>Nilai:</strong> .....................................</div>
+      </div>
+
+      <!-- SOAL IPAS -->
+      <div class="space-y-6 text-sm">
+        <h3 class="font-bold text-purple-800 border-b pb-1">BAGIAN A: PILIHAN GANDA (Nomor 1 - 15)</h3>
+        <div class="space-y-4">
+          <div>
+            <p><strong>1.</strong> (Indikator C1 - PG) Bagian tubuh manusia yang berfungsi melindung otak dan tempat melekatnya pancaindra penglihatan serta pendengaran adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Kepala</label>
+              <label>b. Tangan</label>
+              <label>c. Kaki</label>
+              <label>d. Dada</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>2.</strong> (Indikator C1 - PG) Bagian tubuh yang digunakan untuk memegang benda, menulis, dan membawa barang adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Kaki</label>
+              <label>b. Tangan</label>
+              <label>c. Kepala</label>
+              <label>d. Leher</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>3.</strong> (Indikator C2 - PG) Ketika menendang bola saat berolahraga di lapangan, anggota tubuh utama yang digunakan adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Tangan</label>
+              <label>b. Kaki</label>
+              <label>c. Kepala</label>
+              <label>d. Telinga</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>4.</strong> (Indikator C1 - PG) Bagian keras di dalam tubuh manusia yang berfungsi memberi bentuk tubuh dan melindungi organ dalam dinamakan ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Otot</label>
+              <label>b. Tulang / Rangka</label>
+              <label>c. Kulit</label>
+              <label>d. Darah</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>5.</strong> (Indikator C2 - PG) Jaringan tubuh yang berfungsi sebagai alat gerak aktif melekat pada tulang untuk menggerakkan tubuh adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Otot</label>
+              <label>b. Kulit</label>
+              <label>c. Kuku</label>
+              <label>d. Rambut</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>6.</strong> (Indikator C1 - PG) Kerja sama antara tulang dan otot memungkinkan manusia untuk ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Bergerak dan beraktivitas</label>
+              <label>b. Bernapas saat tidur</label>
+              <label>c. Berpikir cepat</label>
+              <label>d. Merasakan manis dan pahit</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>7.</strong> (Indikator C1 - PG) Pancaindra yang berguna untuk menerima rangsangan gelombang suara / bunyi adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Mata</label>
+              <label>b. Hidung</label>
+              <label>c. Telinga</label>
+              <label>d. Lidah</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>8.</strong> (Indikator C1 - PG) Indra pembau yang dapat membedakan bau harum dan busuk adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Hidung</label>
+              <label>b. Kulit</label>
+              <label>c. Lidah</label>
+              <label>d. Mata</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>9.</strong> (Indikator C1 - PG) Bagian pancaindra sebagai pengecap rasa manis, asin, asam, dan pahit adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Gigi</label>
+              <label>b. Lidah</label>
+              <label>c. Bibir</label>
+              <label>d. Gusi</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>10.</strong> (Indikator C1 - PG) Pancaindra peraba yang melapisi seluruh permukaan tubuh manusia adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Kulit</label>
+              <label>b. Daging</label>
+              <label>c. Tulang</label>
+              <label>d. Rambut</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>11.</strong> (Indikator C2 - PG) Ketika menyentuh es batu terasa sangat dingin, indra yang menerima rangsangan suhu dingin tersebut adalah ....</p>
+            <div class="grid grid-cols-4 gap-1 ml-4 mt-1">
+              <label>a. Kulit</label>
+              <label>b. Mata</label>
+              <label>c. Telinga</label>
+              <label>d. Hidung</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>12.</strong> (Indikator C4 - PG) Urutan jalurnya cahaya masuk ke dalam mata hingga membentuk bayangan adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Kornea $\rightarrow$ Pupil $\rightarrow$ Lensa Mata $\rightarrow$ Retina</label>
+              <label>b. Retina $\rightarrow$ Lensa Mata $\rightarrow$ Pupil $\rightarrow$ Kornea</label>
+              <label>c. Pupil $\rightarrow$ Kornea $\rightarrow$ Retina $\rightarrow$ Lensa Mata</label>
+              <label>d. Lensa Mata $\rightarrow$ Pupil $\rightarrow$ Kornea $\rightarrow$ Retina</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>13.</strong> (Indikator C4 - PG) Saat kita berada di ruangan gelap, bagian pupil mata akan bereaksi dengan cara ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Membesar untuk menangkap lebih banyak cahaya</label>
+              <label>b. Mengecil agar cahaya tidak masuk</label>
+              <label>c. Tertutup rapat</label>
+              <label>d. Berubah warna menjadi merah</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>14.</strong> (Indikator C2 - PG) Cara merawat kesehatan mata yang baik di bawah ini adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Membaca buku sangat dekat sambil tiduran</label>
+              <label>b. Membaca di tempat terang dan memberi jarak baca 30 cm</label>
+              <label>c. Mengucek mata dengan tangan kotor</label>
+              <label>d. Memandang matahari secara langsung</label>
+            </div>
+          </div>
+
+          <div>
+            <p><strong>15.</strong> (Indikator C2 - PG) Upaya merawat kesehatan telinga yang aman adalah ....</p>
+            <div class="grid grid-cols-2 gap-1 ml-4 mt-1">
+              <label>a. Mengorek telinga dengan benda tajam/benda keras</label>
+              <label>b. Mendengarkan musik dengan volume sangat keras</label>
+              <label>c. Membersihkan bagian luar telinga dan tidak memasukkan benda berbahaya</label>
+              <label>d. Membiarkan air kotor masuk telinga</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- BAGIAN MENJODOHKAN (Soal 16-20 sesuai indikator) -->
+        <h3 class="font-bold text-purple-800 border-b pb-1 pt-4">BAGIAN B: MENJODOHKAN CARA MERAWAT PANCAINDERA (Nomor 16 - 20)</h3>
+        <p class="text-xs text-slate-600">Jodohkanlah kegiatan merawat pancaindra di kolom sebelah kiri dengan pancaindra yang tepat di sebelah kanan!</p>
+        <div class="space-y-2 border p-3 rounded-lg bg-purple-50">
+          <p><strong>16.</strong> Membaca buku dengan penerangan memadai dan tidak sambil tiduran $\rightarrow$ ( ........................ )</p>
+          <p><strong>17.</strong> Menjaga kebersihan dari suara terlalu keras & membersihkan daun telinga secara rutin $\rightarrow$ ( ........................ )</p>
+          <p><strong>18.</strong> Menggosok gigi & membersihkan permukaan lidah secara lembut $\rightarrow$ ( ........................ )</p>
+          <p><strong>19.</strong> Menutup hidung saat melewai tempat berdebu / polusi $\rightarrow$ ( ........................ )</p>
+          <p><strong>20.</strong> Mandi 2 kali sehari menggunakan sabun mandi $\rightarrow$ ( ........................ )</p>
+        </div>
+
+        <h3 class="font-bold text-purple-800 border-b pb-1 pt-4">BAGIAN C: ESAI / URAIAN (Nomor 21 - 25)</h3>
+        <div class="space-y-4">
+          <p><strong>21.</strong> (Indikator C2 - Esai) Jelaskan fungsi utama anggota tubuh tangan dan kaki bagi kegiatan kita sehari-hari!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+
+          <p><strong>22.</strong> (Indikator C1 - Esai) Sebutkan lima (5) pancaindra manusia beserta fungsi utamanya masing-masing!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+
+          <p><strong>23.</strong> (Indikator C4 - Esai) Jelaskan secara singkat proses mata melihat benda mulai dari masuknya cahaya hingga otak mengenali benda tersebut!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+
+          <p><strong>24.</strong> (Indikator C5 - Esai) Apa akibat buruk jika seseorang memiliki kebiasaan menonton HP/TV di ruang gelap dalam durasi lama? Berikan pendapatmu!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+
+          <p><strong>25.</strong> (Indikator C6 - Esai) Rancanglah jadwal 3 kegiatan sehari-hari yang dapat kamu lakukan untuk merawat dan menjaga kesehatan seluruh pancaindramu!</p>
+          <p class="text-xs text-slate-400">Jawab: ........................................................................................................................................................</p>
+        </div>
+      </div>
+
+      <!-- KUNCI JAWABAN IPAS -->
+      <div class="answer-key page-break-before mt-8 pt-6 border-t-2 border-dashed border-red-400 bg-red-50 p-6 rounded-xl">
+        <h3 class="text-base font-bold text-red-700 uppercase mb-3 text-center">KUNCI JAWABAN & PEMBAHASAN: IPAS BAB 1</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          <div>
+            <h4 class="font-bold text-slate-800 border-b pb-1 mb-2">Pilihan Ganda & Menjodohkan</h4>
+            <ol class="list-decimal list-inside space-y-1 text-slate-700">
+              <li><strong>A</strong> (Kepala)</li>
+              <li><strong>B</strong> (Tangan)</li>
+              <li><strong>B</strong> (Kaki)</li>
+              <li><strong>B</strong> (Tulang / Rangka)</li>
+              <li><strong>A</strong> (Otot)</li>
+              <li><strong>A</strong> (Bergerak dan beraktivitas)</li>
+              <li><strong>C</strong> (Telinga)</li>
+              <li><strong>A</strong> (Hidung)</li>
+              <li><strong>B</strong> (Lidah)</li>
+              <li><strong>A</strong> (Kulit)</li>
+              <li><strong>A</strong> (Kulit)</li>
+              <li><strong>A</strong> (Kornea $\rightarrow$ Pupil $\rightarrow$ Lensa Mata $\rightarrow$ Retina)</li>
+              <li><strong>A</strong> (Membesar untuk menangkap cahaya)</li>
+              <li><strong>B</strong> (Membaca terang & jarak 30 cm)</li>
+              <li><strong>C</strong> (Membersihkan luar telinga & hindari benda keras)</li>
+            </ol>
+            <div class="mt-2 border-t pt-2">
+              <p><strong>16.</strong> Mata</p>
+              <p><strong>17.</strong> Telinga</p>
+              <p><strong>18.</strong> Lidah</p>
+              <p><strong>19.</strong> Hidung</p>
+              <p><strong>20.</strong> Kulit</p>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-800 border-b pb-1 mb-2">Esai / Uraian</h4>
+            <div class="space-y-2">
+              <p><strong>21.</strong> Tangan: Memegang, menulis, membawa. Kaki: Berjalan, berlari, menopang tubuh.</p>
+              <p><strong>22.</strong> (1) Mata: Penglihatan, (2) Telinga: Pendengaran, (3) Hidung: Pembau, (4) Lidah: Pengecap rasa, (5) Kulit: Peraba.</p>
+              <p><strong>23.</strong> Cahaya masuk kornea $\rightarrow$ pupil $\rightarrow$ dibiaskan lensa mata ke retina $\rightarrow$ sinyal dikirim saraf ke otak untuk diterjemahkan.</p>
+              <p><strong>24.</strong> Mata cepat lelah, perih, dan dapat merusak fungsi penglihatan (menyebabkan minus/rabun jauh).</p>
+              <p><strong>25.</strong> (1) Mandi & sikat gigi rutin, (2) Membaca buku dengan lampu cukup terang, (3) Memakai masker saat polusi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ======================================================= -->
+    <!-- MATA PELAJARAN 5: BAHASA INGGRIS                        -->
+    <!-- ======================================================= -->
+    <div class="subject-block binggris bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 card-box page-break-before">
+      <!-- Kop Surat Header -->
+      <div class="border-b-2 border-amber-600 pb-4 mb-6 text-center">
+        <h2 class="text-lg font-bold text-slate-800 tracking-wide">HAQI SCHOOL</h2>
+        <p class="text-xs text-slate-600">Hafidz Qur'an Indonesian School</p>
+        <div class="mt-3 py-1.5 bg-amber-50 text-amber-800 font-bold text-sm uppercase rounded">
+          DAILY ASSESSMENT - ENGLISH CHAPTER 1: IT'S NICE TO SEE YOU
+        </div>
+      </div>
+
+      <!-- Identitas Siswa -->
+      <div class="grid grid-cols-2 gap-4 text-xs mb-6 border p-3 rounded-lg bg-slate-50">
+        <div><strong>Student Name:</strong> .....................................</div>
+        <div><strong>Day / Date:</strong> .....................................</div>
+        <div><strong>Grade:</strong> 3 (Three)</div>
+        <div><strong>Score:</strong> .....................................</div>
+      </div>
+
+      <!-- SOAL BAHASA INGGRIS -->
+      <div class="space-y-6 text-sm">
+        <h3 class="font-bold text-amber-800 border-b pb-1">SECTION A: FILL IN THE BLANK (Numbers 1 - 20)</h3>
+        <p class="text-xs text-slate-600">Complete the sentences with the most suitable words!</p>
+        
+        <div class="space-y-3">
+          <p><strong>1.</strong> (Indikator C1) A: "What is your name?" <br>&nbsp;&nbsp;&nbsp;&nbsp;B: "My name ...... Haqi."</p>
+          
+          <p><strong>2.</strong> (Indikator C1 & C2) A: "How old are you?" <br>&nbsp;&nbsp;&nbsp;&nbsp;B: "I ...... nine years old."</p>
+
+          <p><strong>3.</strong> (Indikator C2) When you meet your teacher at 07.00 in the morning, you say "Good ......"</p>
+
+          <p><strong>4.</strong> (Indikator C2) Complete the apology expression: "I am ...... I lost your pencil."</p>
+
+          <p><strong>5.</strong> (Indikator C1) Complete: "She ...... 8 years old." (is / am)</p>
+
+          <p><strong>6.</strong> (Indikator C2) A: "What is your hobby?" <br>&nbsp;&nbsp;&nbsp;&nbsp;B: "My hobby ...... playing football."</p>
+
+          <p><strong>7.</strong> (Indikator C3) Complete the polite request: "...... I borrow your eraser, please?"</p>
+
+          <p><strong>8.</strong> (Indikator C1) A: "Where do you live?" <br>&nbsp;&nbsp;&nbsp;&nbsp;B: "I ...... in Bekasi."</p>
+
+          <p><strong>9.</strong> (Indikator C2) When you leave your friends to go home, you say "Good ......"</p>
+
+          <p><strong>10.</strong> (Indikator C3) A: "Nice to meet you." <br>&nbsp;&nbsp;&nbsp;&nbsp;B: "Nice to meet you, ......"</p>
+
+          <p><strong>11.</strong> (Indikator C3) Asking permission to go to the toilet: "May I go to the ......, please?"</p>
+
+          <p><strong>12.</strong> (Indikator C2) Choose correct grammar: *"Hi, my name (is/are) Ahmad."* The correct word is ......</p>
+
+          <p><strong>13.</strong> (Indikator C3) A: "How are you today?" <br>&nbsp;&nbsp;&nbsp;&nbsp;B: "I ...... fine, thank you."</p>
+
+          <p><strong>14.</strong> (Indikator C4 - Formal vs Informal) *"Good morning, Mr. Headmaster."* Is this greeting **Formal** or **Informal**? Answer: ......</p>
+
+          <p><strong>15.</strong> (Indikator C4 - Formal vs Informal) *"Hey guys, what's up!"* Is this greeting **Formal** or **Informal**? Answer: ......</p>
+
+          <p><strong>16.</strong> (Indikator C2) Grammatical check: *"I live in Jakarta."* The underlined word shows place of ......</p>
+
+          <p><strong>17.</strong> (Indikator C2) Select correct pronoun: *(My / I)* hobby is reading books.</p>
+
+          <p><strong>18.</strong> (Indikator C1) A: "Where were you born?" <br>&nbsp;&nbsp;&nbsp;&nbsp;B: "I was ...... in Bandung."</p>
+
+          <p><strong>19.</strong> (Indikator C2) Response for apology: A: "I'm sorry." B: "That is ......" (okay / bad)</p>
+
+          <p><strong>20.</strong> (Indikator C2) Complete hobby statement: "I like to ...... swimming on Sunday."</p>
+        </div>
+
+        <h3 class="font-bold text-amber-800 border-b pb-1 pt-4">SECTION B: ESSAY & DIALOGUE CREATION (Numbers 21 - 25)</h3>
+        <div class="space-y-4">
+          <p><strong>21.</strong> (Indikator C3 - Essay) Write a complete self-introduction paragraph including your Name, Age, Living place, and Hobby!</p>
+          <p class="text-xs text-slate-400">Answer: ........................................................................................................................................................</p>
+
+          <p><strong>22.</strong> (Indikator C3 - Essay) Create a short dialogue about apologizing to a friend for losing their ruler and asking for help to find it!</p>
+          <p class="text-xs text-slate-400">Answer: ........................................................................................................................................................</p>
+
+          <p><strong>23.</strong> (Indikator C6 - Essay) Create a full conversation dialogue between two new students containing **Greeting**, **Self Introduction**, and **Goodbye**!</p>
+          <p class="text-xs text-slate-400">Answer: ........................................................................................................................................................</p>
+
+          <p><strong>24.</strong> (Indikator C5 - Essay) Evaluate and explain why using polite words like **"Please"** and **"Thank you"** is very important in daily conversation!</p>
+          <p class="text-xs text-slate-400">Answer: ........................................................................................................................................................</p>
+
+          <p><strong>25.</strong> (Indikator C6 - Essay) Design a complex classroom dialogue scenario between a student and a teacher containing **2 different permission requests** (e.g., borrowing a pen and using the toilet)!</p>
+          <p class="text-xs text-slate-400">Answer: ........................................................................................................................................................</p>
+        </div>
+      </div>
+
+      <!-- KUNCI JAWABAN BAHASA INGGRIS -->
+      <div class="answer-key page-break-before mt-8 pt-6 border-t-2 border-dashed border-red-400 bg-red-50 p-6 rounded-xl">
+        <h3 class="text-base font-bold text-red-700 uppercase mb-3 text-center">ANSWER KEY & EXPLANATION: ENGLISH CHAPTER 1</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          <div>
+            <h4 class="font-bold text-slate-800 border-b pb-1 mb-2">Fill in the Blank Keys</h4>
+            <ol class="list-decimal list-inside space-y-1 text-slate-700">
+              <li><strong>is</strong></li>
+              <li><strong>am</strong></li>
+              <li><strong>morning</strong></li>
+              <li><strong>sorry</strong></li>
+              <li><strong>is</strong></li>
+              <li><strong>is</strong></li>
+              <li><strong>May / Can</strong></li>
+              <li><strong>live</strong></li>
+              <li><strong>bye / night</strong></li>
+              <li><strong>too</strong></li>
+              <li><strong>toilet / restroom</strong></li>
+              <li><strong>is</strong></li>
+              <li><strong>am</strong></li>
+              <li><strong>Formal</strong></li>
+              <li><strong>Informal</strong></li>
+              <li><strong>living / residence</strong></li>
+              <li><strong>My</strong></li>
+              <li><strong>born</strong></li>
+              <li><strong>okay</strong></li>
+              <li><strong>go</strong></li>
+            </ol>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-800 border-b pb-1 mb-2">Essay Sample Responses</h4>
+            <div class="space-y-2">
+              <p><strong>21.</strong> <em>"Hello, my name is Haqi. I am 9 years old. I live in Bekasi. My hobby is playing football."</em></p>
+              <p><strong>22.</strong> <br>A: <em>"I am so sorry, I lost your ruler."</em><br>B: <em>"It's okay. Can you help me find it?"</em><br>A: <em>"Sure, let's search together."</em></p>
+              <p><strong>23.</strong> <br>A: <em>"Good morning! I am Ali."</em><br>B: <em>"Good morning! My name is Edo."</em><br>A: <em>"Nice to meet you, Edo. Goodbye!"</em><br>B: <em>"Goodbye, Ali!"</em></p>
+              <p><strong>24.</strong> Because it shows respect, courtesy, and good manners to other people.</p>
+              <p><strong>25.</strong> <br>Student: <em>"Excuse me, Teacher. May I borrow your pen, please?"</em><br>Teacher: <em>"Yes, here it is."</em><br>Student: <em>"Thank you. And May I go to the toilet, please?"</em><br>Teacher: <em>"Yes, you may."</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    let showKeys = true;
+
+    function toggleAnswerKeys() {
+      showKeys = !showKeys;
+      const keys = document.querySelectorAll('.answer-key');
+      const btn = document.getElementById('toggleKeyBtn');
+      
+      keys.forEach(k => {
+        k.style.display = showKeys ? 'block' : 'none';
+      });
+
+      btn.innerText = showKeys ? 'Sembunyikan Kunci Jawaban' : 'Tampilkan Kunci Jawaban';
+      btn.className = showKeys 
+        ? 'bg-amber-500 hover:bg-amber-600 text-white font-semibold text-sm px-4 py-2 rounded-xl transition'
+        : 'bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm px-4 py-2 rounded-xl transition';
+    }
+
+    function filterSubject(subjectClass) {
+      const blocks = document.querySelectorAll('.subject-block');
+      const tabs = document.querySelectorAll('.tab-btn');
+
+      tabs.forEach(tab => {
+        tab.classList.remove('bg-emerald-100', 'text-emerald-800', 'active');
+        tab.classList.add('bg-slate-100', 'text-slate-600');
+      });
+
+      event.target.classList.remove('bg-slate-100', 'text-slate-600');
+      event.target.classList.add('bg-emerald-100', 'text-emerald-800', 'active');
+
+      blocks.forEach(block => {
+        if (subjectClass === 'all' || block.classList.contains(subjectClass)) {
+          block.style.display = 'block';
+        } else {
+          block.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
