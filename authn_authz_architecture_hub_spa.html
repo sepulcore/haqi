@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open-Source AuthN & AuthZ Architecture Hub with IDX Compliance</title>
+    <title>Open-Source AuthN & AuthZ Architecture Hub with IDX Compliance & Admin UI</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Chart.js CDN -->
@@ -52,21 +52,21 @@
 <body class="min-h-screen flex flex-col bg-slate-50 text-slate-800">
 
     <!-- Header & Navigation Bar -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center space-x-3">
                     <span class="p-2 bg-emerald-600 text-white font-bold rounded-lg text-lg leading-none">🛡️</span>
                     <div>
-                        <h1 class="font-bold text-slate-900 text-base md:text-lg leading-tight">AuthN, AuthZ & IDX Compliance Hub</h1>
-                        <p class="text-xs text-slate-500 hidden sm:block">APISIX + ZITADEL + Cerbos + Backstage + IDX Remote Trading</p>
+                        <h1 class="font-bold text-slate-900 text-base md:text-lg leading-tight">AuthN, AuthZ & Compliance Hub</h1>
+                        <p class="text-xs text-slate-500 hidden sm:block">APISIX + ZITADEL + Cerbos + Backstage + Admin UIs</p>
                     </div>
                 </div>
                 <nav class="hidden md:flex space-x-1 lg:space-x-3 text-xs lg:text-sm font-medium text-slate-600">
                     <a href="#simulator" class="px-3 py-2 rounded-md hover:text-emerald-700 hover:bg-slate-100 transition">Simulator</a>
-                    <a href="#compliance" class="px-3 py-2 rounded-md hover:text-emerald-700 hover:bg-slate-100 transition font-bold text-emerald-700">IDX/OJK Compliance</a>
+                    <a href="#admin-ui" class="px-3 py-2 rounded-md hover:text-emerald-700 hover:bg-slate-100 transition">Admin UIs</a>
+                    <a href="#compliance" class="px-3 py-2 rounded-md hover:text-emerald-700 hover:bg-slate-100 transition font-bold text-emerald-700">IDX/OJK Rules</a>
                     <a href="#backstage" class="px-3 py-2 rounded-md hover:text-emerald-700 hover:bg-slate-100 transition">Backstage Portal</a>
-                    <a href="#wizard" class="px-3 py-2 rounded-md hover:text-emerald-700 hover:bg-slate-100 transition">Stack Matcher</a>
                     <a href="#matrix" class="px-3 py-2 rounded-md hover:text-emerald-700 hover:bg-slate-100 transition">Comparison</a>
                     <a href="#code" class="px-3 py-2 rounded-md hover:text-emerald-700 hover:bg-slate-100 transition">Deploy Specs</a>
                 </nav>
@@ -74,50 +74,49 @@
         </div>
     </header>
 
-    <!-- Main Container -->
-    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
-
-        <!-- Executive Summary Banner -->
-        <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-950 text-white rounded-2xl p-6 md:p-8 shadow-lg">
-            <div class="max-w-3xl space-y-4">
-                <div class="inline-flex items-center space-x-2 text-xs font-semibold tracking-wider uppercase text-emerald-400 bg-emerald-900/50 px-3 py-1 rounded-full border border-emerald-500/30">
+    <!-- Persistent Sticky Hero Banner -->
+    <div class="sticky top-16 z-40 bg-slate-900 border-b border-slate-800 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+            <div class="max-w-4xl space-y-2">
+                <div class="inline-flex items-center space-x-2 text-[10px] font-semibold tracking-wider uppercase text-emerald-400 bg-emerald-900/50 px-2.5 py-0.5 rounded-full border border-emerald-500/30">
                     <span>Regulatory Compliant Architecture (IDX / OJK Remote Trading)</span>
                 </div>
-                <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-white">
+                <h2 class="text-xl md:text-2xl font-bold tracking-tight text-white">
                     APISIX + ZITADEL + Cerbos + Spotify Backstage
                 </h2>
-                <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                <p class="text-slate-300 text-xs md:text-sm leading-relaxed">
                     Designed to fully satisfy Indonesian Stock Exchange (IDX) regulations for <em>Fasilitas Pesanan Langsung</em> (Direct Order / Remote Trading)—supporting multi-stage 2FA, password complexity rules, account lockout protection, secure channel encryption, and complete audit logging.
                 </p>
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-slate-700/80">
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 border-t border-slate-800 text-xs">
                     <div>
-                        <span class="block text-xl font-bold text-emerald-400">Fully Compliant</span>
-                        <span class="text-xs text-slate-400">IDX / OJK Remote Trading</span>
+                        <span class="font-bold text-emerald-400">Fully Compliant</span>
+                        <span class="block text-[10px] text-slate-400">IDX / OJK Remote Trading</span>
                     </div>
                     <div>
-                        <span class="block text-xl font-bold text-emerald-400">2FA & Passkeys</span>
-                        <span class="text-xs text-slate-400">ZITADEL AuthN Engine</span>
+                        <span class="font-bold text-emerald-400">2FA & Passkeys</span>
+                        <span class="block text-[10px] text-slate-400">ZITADEL AuthN Engine</span>
                     </div>
                     <div>
-                        <span class="block text-xl font-bold text-emerald-400">TLS 1.3 Secure Channel</span>
-                        <span class="text-xs text-slate-400">APISIX Ingress Gateway</span>
+                        <span class="font-bold text-emerald-400">TLS 1.3 Secure Channel</span>
+                        <span class="block text-[10px] text-slate-400">APISIX Ingress Gateway</span>
                     </div>
                     <div>
-                        <span class="block text-xl font-bold text-emerald-400">YAML ReBAC / RBAC</span>
-                        <span class="text-xs text-slate-400">Cerbos Policy Engine</span>
+                        <span class="font-bold text-emerald-400">YAML ReBAC / RBAC</span>
+                        <span class="block text-[10px] text-slate-400">Cerbos Policy Engine</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
 
         <!-- SECTION 1: INTERACTIVE REQUEST FLOW SIMULATOR -->
         <section id="simulator" class="bg-white rounded-2xl border border-slate-200 p-6 md:p-8 shadow-sm">
             <div class="mb-6">
                 <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Live Architectural Simulation</span>
                 <h3 class="text-xl md:text-2xl font-bold text-slate-900 mt-1">End-to-End Request Pipeline</h3>
-                <p class="text-slate-600 text-sm mt-2 leading-relaxed">
-                    Test how user authentication, gateway edge verification, and microservice sidecar policy evaluation function together.
-                </p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-slate-50 p-5 rounded-xl border border-slate-200 mb-6">
@@ -146,226 +145,137 @@
                 </div>
             </div>
 
-            <!-- Pipeline Visual Flow Steps -->
             <div class="grid grid-cols-1 md:grid-cols-4 gap-4 relative">
                 <div class="bg-white border-2 border-slate-200 rounded-xl p-4 shadow-sm flex flex-col justify-between" id="step-card-1">
                     <div>
                         <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-blue-100 text-blue-800">Step 1: AuthN</span>
                         <h4 class="font-bold text-sm text-slate-900 mt-2">ZITADEL OIDC Token</h4>
-                        <p class="text-xs text-slate-500 mt-1">Issues signed RS256 JWT after 2FA SSO login.</p>
                     </div>
                     <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-slate-600 font-mono" id="sim-jwt-preview"></div>
                 </div>
-
                 <div class="bg-white border-2 border-slate-200 rounded-xl p-4 shadow-sm flex flex-col justify-between" id="step-card-2">
                     <div>
                         <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-amber-100 text-amber-800">Step 2: Edge Auth</span>
                         <h4 class="font-bold text-sm text-slate-900 mt-2">APISIX Secure Channel</h4>
-                        <p class="text-xs text-slate-500 mt-1">TLS 1.3 encryption & JWKS validation.</p>
                     </div>
                     <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-slate-600 font-mono" id="sim-claims-preview"></div>
                 </div>
-
                 <div class="bg-white border-2 border-slate-200 rounded-xl p-4 shadow-sm flex flex-col justify-between" id="step-card-3">
                     <div>
                         <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-purple-100 text-purple-800">Step 3: Service</span>
                         <h4 class="font-bold text-sm text-slate-900 mt-2">Polyglot Microservice</h4>
-                        <p class="text-xs text-slate-500 mt-1">Go/Rust/Java/TS app calls local sidecar.</p>
                     </div>
                     <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-slate-600 font-mono">
-                        Protocol: <span class="text-purple-700 font-bold">gRPC Localhost</span><br>
-                        Latency: <span class="text-emerald-600 font-bold">&lt; 0.8 ms</span>
+                        Protocol: gRPC Localhost
                     </div>
                 </div>
-
                 <div class="bg-white border-2 border-slate-200 rounded-xl p-4 shadow-sm flex flex-col justify-between" id="step-card-4">
                     <div>
                         <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Step 4: AuthZ</span>
                         <h4 class="font-bold text-sm text-slate-900 mt-2">Cerbos PDP YAML Rule</h4>
-                        <p class="text-xs text-slate-500 mt-1">Stateless authorization evaluation.</p>
                     </div>
                     <div class="mt-4 pt-3 border-t border-slate-100" id="sim-decision-box"></div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 2: IDX / OJK COMPLIANCE ANALYSIS DEEP-DIVE -->
+        <!-- SECTION 2: ADMIN & COMPLIANCE USER INTERFACES -->
+        <section id="admin-ui" class="bg-white rounded-2xl border border-slate-200 p-6 md:p-8 shadow-sm">
+            <div class="mb-6">
+                <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">IT Support & Compliance Consoles</span>
+                <h3 class="text-xl md:text-2xl font-bold text-slate-900 mt-1">Administrative UIs for Rule & User Management</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-[10px] font-bold text-orange-700 bg-orange-100 px-2 py-0.5 rounded">AuthN & User Management</span>
+                        <h4 class="font-bold text-base text-slate-900 mt-2">ZITADEL Web Console</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">Manage user accounts, assign roles, inspect security event audit logs, enforce MFA, and configure lockout thresholds.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200 text-xs text-slate-500 font-medium">Target Users: <span class="text-slate-800 font-bold">IT Support / Helpdesk</span></div>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded">AuthZ Policy Rules</span>
+                        <h4 class="font-bold text-base text-slate-900 mt-2">Cerbos Playground & CLI</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">Visual simulation and testing interface where compliance officers verify authorization rules before merging into Git.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200 text-xs text-slate-500 font-medium">Target Users: <span class="text-slate-800 font-bold">Compliance Officers</span></div>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">Developer Portal</span>
+                        <h4 class="font-bold text-base text-slate-900 mt-2">Spotify Backstage Portal</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">Single pane of glass to inspect service ownership, dependency graphs, API catalogs (`catalog-info.yaml`), and techdocs.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200 text-xs text-slate-500 font-medium">Target Users: <span class="text-slate-800 font-bold">Engineers & IT Support</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: IDX / OJK COMPLIANCE ANALYSIS -->
         <section id="compliance" class="bg-white rounded-2xl border border-slate-200 p-6 md:p-8 shadow-sm">
             <div class="mb-6">
                 <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Regulatory Compliance Mapping</span>
                 <h3 class="text-xl md:text-2xl font-bold text-slate-900 mt-1">IDX / OJK Remote Trading (*Fasilitas Pesanan Langsung*) Compliance</h3>
-                <p class="text-slate-600 text-sm mt-2 leading-relaxed">
-                    Detailed compliance mapping showing how our proposed open-source architecture satisfies all regulatory clauses for securities trading platforms in Indonesia.
-                </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Clause 1 -->
                 <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl flex flex-col justify-between">
                     <div>
                         <span class="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">Points 2a & 2b</span>
                         <h4 class="font-bold text-sm text-slate-900 mt-2">Multi-Stage 2FA Authentication</h4>
-                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">
-                            Requires 2-stage verification combining "what you know" (PIN/password), "what you have" (token/chip/passkey), or "what you are" (biometrics) for transactional order execution.
-                        </p>
+                        <p class="text-xs text-slate-600 mt-1">Requires 2-stage verification combining PIN, password, or biometrics.</p>
                     </div>
                     <div class="mt-4 pt-3 border-t border-slate-200 text-xs text-emerald-700 font-semibold flex items-center justify-between">
                         <span>ZITADEL MFA & WebAuthn</span>
                         <span class="bg-emerald-600 text-white px-2 py-0.5 rounded text-[10px]">Compliant</span>
                     </div>
                 </div>
-
-                <!-- Clause 2 -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl flex flex-col justify-between">
-                    <div>
-                        <span class="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">Points 3 & 4</span>
-                        <h4 class="font-bold text-sm text-slate-900 mt-2">PIN / Password Reset Re-Verification</h4>
-                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">
-                            Mandates identity re-verification via email, phone, or liveness detection during password/PIN resets.
-                        </p>
-                    </div>
-                    <div class="mt-4 pt-3 border-t border-slate-200 text-xs text-emerald-700 font-semibold flex items-center justify-between">
-                        <span>ZITADEL Webhooks & Otp</span>
-                        <span class="bg-emerald-600 text-white px-2 py-0.5 rounded text-[10px]">Compliant</span>
-                    </div>
-                </div>
-
-                <!-- Clause 3 -->
                 <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl flex flex-col justify-between">
                     <div>
                         <span class="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">Points 5, 6, & 7</span>
                         <h4 class="font-bold text-sm text-slate-900 mt-2">Account Locking & Failure Limits</h4>
-                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">
-                            Temporary account freezing upon repeated incorrect PIN/password entries with admin unfreeze workflows.
-                        </p>
+                        <p class="text-xs text-slate-600 mt-1">Temporary account freezing upon repeated incorrect PIN/password entries.</p>
                     </div>
                     <div class="mt-4 pt-3 border-t border-slate-200 text-xs text-emerald-700 font-semibold flex items-center justify-between">
-                        <span>ZITADEL Lockout & APISIX Rate Limit</span>
+                        <span>ZITADEL Lockout Policies</span>
                         <span class="bg-emerald-600 text-white px-2 py-0.5 rounded text-[10px]">Compliant</span>
                     </div>
                 </div>
-
-                <!-- Clause 4 -->
                 <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl flex flex-col justify-between">
                     <div>
                         <span class="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">Points 10a–f</span>
                         <h4 class="font-bold text-sm text-slate-900 mt-2">Security Parameters & Session Timeout</h4>
-                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">
-                            Password expiration enforcement, complexity rules, history, and automatic session timeout for secondary order auth.
-                        </p>
+                        <p class="text-xs text-slate-600 mt-1">Password complexity rules and session timeout handling.</p>
                     </div>
                     <div class="mt-4 pt-3 border-t border-slate-200 text-xs text-emerald-700 font-semibold flex items-center justify-between">
-                        <span>ZITADEL Policies & APISIX TTL</span>
-                        <span class="bg-emerald-600 text-white px-2 py-0.5 rounded text-[10px]">Compliant</span>
-                    </div>
-                </div>
-
-                <!-- Clause 5 -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl flex flex-col justify-between">
-                    <div>
-                        <span class="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">Point 11</span>
-                        <h4 class="font-bold text-sm text-slate-900 mt-2">Data & Password Encryption</h4>
-                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">
-                            Mandatory hashing and cryptographic encryption of stored customer personal data and passwords at rest.
-                        </p>
-                    </div>
-                    <div class="mt-4 pt-3 border-t border-slate-200 text-xs text-emerald-700 font-semibold flex items-center justify-between">
-                        <span>Argon2id + DB Encryption at Rest</span>
-                        <span class="bg-emerald-600 text-white px-2 py-0.5 rounded text-[10px]">Compliant</span>
-                    </div>
-                </div>
-
-                <!-- Clause 6 -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl flex flex-col justify-between">
-                    <div>
-                        <span class="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">Point 12</span>
-                        <h4 class="font-bold text-sm text-slate-900 mt-2">Secure Channel Cryptography</h4>
-                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">
-                            Secure channel encryption during Direct Order operations to prevent third-party interception or tampering.
-                        </p>
-                    </div>
-                    <div class="mt-4 pt-3 border-t border-slate-200 text-xs text-emerald-700 font-semibold flex items-center justify-between">
-                        <span>APISIX TLS 1.3 / mTLS Mesh</span>
+                        <span>ZITADEL & APISIX TTL</span>
                         <span class="bg-emerald-600 text-white px-2 py-0.5 rounded text-[10px]">Compliant</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 3: BACKSTAGE PORTAL INTEGRATION -->
+        <!-- SECTION 4: BACKSTAGE PORTAL INTEGRATION -->
         <section id="backstage" class="bg-white rounded-2xl border border-slate-200 p-6 md:p-8 shadow-sm">
             <div class="mb-6">
                 <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Developer Portal Core</span>
                 <h3 class="text-xl md:text-2xl font-bold text-slate-900 mt-1">Spotify Backstage Integration Hub</h3>
-                <p class="text-slate-600 text-sm mt-2 leading-relaxed">
-                    How Backstage connects APISIX gateways, ZITADEL authentication, and Cerbos policies into a single pane of glass for your engineering organization.
-                </p>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl">
                     <div class="text-emerald-600 font-bold text-lg mb-2">1. Unified SSO & Portal Auth</div>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        Backstage authenticates engineers using <strong>ZITADEL</strong> as its primary OIDC provider. Developers inherit their team roles directly inside the portal without managing duplicate credentials.
-                    </p>
+                    <p class="text-xs text-slate-600">Backstage authenticates engineers using ZITADEL as its primary OIDC provider.</p>
                 </div>
                 <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl">
                     <div class="text-emerald-600 font-bold text-lg mb-2">2. Automated API Discovery</div>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        Microservices publish `catalog-info.yaml` and OpenAPI specs. Backstage automatically renders interactive API docs and syncs route mappings directly to <strong>APISIX</strong> via CI/CD.
-                    </p>
+                    <p class="text-xs text-slate-600">Microservices publish catalog-info.yaml and OpenAPI specs automatically.</p>
                 </div>
                 <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl">
                     <div class="text-emerald-600 font-bold text-lg mb-2">3. Policy & Ownership Catalog</div>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        Developers can inspect service ownership, system dependency graphs, and verify authorization rule definitions (Cerbos YAML) right inside their Backstage techdocs.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 4: WIZARD MATCHING ENGINE -->
-        <section id="wizard" class="bg-white rounded-2xl border border-slate-200 p-6 md:p-8 shadow-sm">
-            <div class="mb-6">
-                <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Dynamic Recommendation Wizard</span>
-                <h3 class="text-xl md:text-2xl font-bold text-slate-900 mt-1">AuthN & AuthZ Security Stack Matcher</h3>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                <div class="lg:col-span-5 space-y-4 bg-slate-50 p-5 rounded-xl border border-slate-200">
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-2">1. Microservice Ecosystem</label>
-                        <select id="cfg-lang" class="w-full bg-white border border-slate-200 rounded-lg p-2 text-xs text-slate-800">
-                            <option value="polyglot" selected>Polyglot Stack (Go, Rust, Java, TypeScript)</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-2">2. Developer Portal</label>
-                        <select id="cfg-portal" class="w-full bg-white border border-slate-200 rounded-lg p-2 text-xs text-slate-800">
-                            <option value="backstage" selected>Spotify Backstage (Recommended)</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-2">3. Policy Language</label>
-                        <select id="cfg-policy" class="w-full bg-white border border-slate-200 rounded-lg p-2 text-xs text-slate-800">
-                            <option value="yaml" selected>Human-Readable YAML (Cerbos)</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-7 flex flex-col justify-between space-y-6">
-                    <div>
-                        <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider mb-3">Compatibility Scores</h4>
-                        <div id="authn-scores-container" class="space-y-2 mb-4"></div>
-                        <div id="authz-scores-container" class="space-y-2"></div>
-                    </div>
-                    <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
-                        <span class="text-xs font-bold text-emerald-800 uppercase tracking-wider">Recommended Stack</span>
-                        <h4 class="text-base font-bold text-slate-900">APISIX + ZITADEL + Cerbos + Backstage</h4>
-                        <p class="text-xs text-slate-700 mt-1">
-                            The ultimate cloud-native, low-footprint IDP and zero-trust security architecture.
-                        </p>
-                    </div>
+                    <p class="text-xs text-slate-600">Inspect service ownership and Cerbos YAML authorization rules directly.</p>
                 </div>
             </div>
         </section>
@@ -381,26 +291,19 @@
             </div>
         </section>
 
-        <!-- SECTION 6: DEPLOYMENT SPECIFICATIONS & CODE EXPLORER -->
+        <!-- SECTION 6: DEPLOYMENT SPECIFICATIONS -->
         <section id="code" class="bg-white rounded-2xl border border-slate-200 p-6 md:p-8 shadow-sm">
             <div class="mb-6">
                 <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Production Setup (K8s & Nomad)</span>
                 <h3 class="text-xl md:text-2xl font-bold text-slate-900 mt-1">Deployment Specs & Backstage Catalog Explorer</h3>
             </div>
-
-            <!-- Code Tabs -->
             <div class="flex space-x-2 border-b border-slate-200 overflow-x-auto custom-scrollbar pb-2 mb-4">
                 <button data-code="backstage-catalog" class="code-tab px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 text-white flex-shrink-0">Backstage catalog-info.yaml</button>
                 <button data-code="cerbos-policy" class="code-tab px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200 flex-shrink-0">Cerbos Policy (YAML)</button>
                 <button data-code="apisix-plugin" class="code-tab px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200 flex-shrink-0">APISIX Route Config</button>
-                <button data-code="nomad-pod" class="code-tab px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200 flex-shrink-0">Nomad: App+Cerbos Group</button>
             </div>
-
-            <!-- Code Display Box -->
             <div class="relative bg-slate-900 text-slate-100 rounded-xl p-5 border border-slate-800">
-                <button id="copy-code-btn" class="absolute top-4 right-4 bg-slate-800 hover:bg-slate-700 text-slate-300 text-[11px] px-2.5 py-1 rounded border border-slate-700 transition">
-                    Copy Code
-                </button>
+                <button id="copy-code-btn" class="absolute top-4 right-4 bg-slate-800 hover:bg-slate-700 text-slate-300 text-[11px] px-2.5 py-1 rounded border border-slate-700 transition">Copy Code</button>
                 <pre><code id="code-block" class="text-xs leading-relaxed text-emerald-400"></code></pre>
             </div>
         </section>
@@ -410,7 +313,7 @@
     <!-- Footer -->
     <footer class="bg-slate-900 text-slate-400 border-t border-slate-800 mt-12 py-8 text-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="font-semibold text-slate-300">APISIX + ZITADEL + Cerbos + Spotify Backstage + IDX Compliance Hub</p>
+            <p class="font-semibold text-slate-300">APISIX + ZITADEL + Cerbos + Spotify Backstage + Admin UIs Hub</p>
         </div>
     </footer>
 
@@ -435,20 +338,7 @@ spec:
   lifecycle: production
   owner: team-checkout
   providesApis:
-    - order-api
-
----
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: order-api
-  description: OpenAPI & SignalR WebSocket specs
-spec:
-  type: openapi
-  lifecycle: production
-  owner: team-checkout
-  definition:
-    $text: ./openapi.yaml`,
+    - order-api`,
 
             'cerbos-policy': `apiVersion: api.cerbos.dev/v1
 resourcePolicy:
@@ -460,11 +350,7 @@ resourcePolicy:
       roles: ["editor"]
       condition:
         match:
-          expr: request.resource.attr.owner_id == request.principal.id
-
-    - actions: ["read", "update", "delete"]
-      effect: EFFECT_ALLOW
-      roles: ["admin"]`,
+          expr: request.resource.attr.owner_id == request.principal.id`,
 
             'apisix-plugin': `{
   "uri": "/v1/orders*",
@@ -475,49 +361,12 @@ resourcePolicy:
       "discovery": "https://zitadel.yourdomain.com/.well-known/openid-configuration",
       "bearer_only": true
     }
-  },
-  "upstream": {
-    "type": "roundrobin",
-    "nodes": {
-      "order-service.default.svc.cluster.local:8080": 1
-    }
-  }
-}`,
-
-            'nomad-pod': `job "microservice-api" {
-  datacenters = ["dc1"]
-
-  group "app-pod" {
-    network {
-      port "app_http" { to = 3000 }
-      port "cerbos_grpc" { to = 3593 }
-    }
-
-    task "cerbos-sidecar" {
-      driver = "docker"
-      config {
-        image = "ghcr.io/cerbos/cerbos:latest"
-        ports = ["cerbos_grpc"]
-      }
-    }
-
-    task "polyglot-app" {
-      driver = "docker"
-      config {
-        image = "your-registry/app:v1"
-        ports = ["app_http"]
-      }
-      env {
-        CERBOS_TARGET = "127.0.0.1:\${NOMAD_PORT_cerbos_grpc}"
-      }
-    }
   }
 }`
         };
 
         document.addEventListener('DOMContentLoaded', () => {
             initSimulator();
-            initWizard();
             initMatrixTable();
             initCodeExplorer();
         });
@@ -543,25 +392,12 @@ resourcePolicy:
                 document.getElementById('sim-decision-box').innerHTML = allow ? 
                     `<div class="bg-emerald-100 text-emerald-900 rounded p-2 text-center font-bold text-xs">EFFECT_ALLOW</div>` :
                     `<div class="bg-rose-100 text-rose-900 rounded p-2 text-center font-bold text-xs">EFFECT_DENY</div>`;
-
-                ['step-card-1', 'step-card-2', 'step-card-3', 'step-card-4'].forEach((id, idx) => {
-                    const card = document.getElementById(id);
-                    if (card) {
-                        card.classList.add('ring-2', 'ring-emerald-500');
-                        setTimeout(() => card.classList.remove('ring-2', 'ring-emerald-500'), 400 + (idx * 150));
-                    }
-                });
             }
 
             runBtn.addEventListener('click', runSimulation);
             userSelect.addEventListener('change', runSimulation);
             actionSelect.addEventListener('change', runSimulation);
             runSimulation();
-        }
-
-        function initWizard() {
-            document.getElementById('authn-scores-container').innerHTML = `<div class="flex justify-between text-xs font-semibold"><span>ZITADEL + Backstage SSO</span><span>98% Match</span></div><div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden"><div class="bg-emerald-600 h-full w-[98%]"></div></div>`;
-            document.getElementById('authz-scores-container').innerHTML = `<div class="flex justify-between text-xs font-semibold"><span>Cerbos PDP Sidecar</span><span>99% Match</span></div><div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden"><div class="bg-emerald-600 h-full w-[99%]"></div></div>`;
         }
 
         function initMatrixTable() {
